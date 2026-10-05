@@ -124,7 +124,7 @@ python: {average_python:.1f}
 english: {average_english:.1f}
 Найкращий студент: {best_students} ({best_average:.1f})"""
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-    f.writelines(results_text)
+    f.write(results_text)
 print(f"Результат аналізу: {results_text}")
 
 
