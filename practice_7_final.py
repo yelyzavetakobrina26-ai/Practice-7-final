@@ -117,15 +117,15 @@ with open(INPUT_FILE, "r", encoding="utf-8") as f:
 #
 # Запустіть скрипт (python analyze.py) і перевірте, що в папці
 # з'явився файл result.txt.
-results_text=f"""
-Середній бал по класу:
+results_text=f"""Середній бал по класу:
 math: {average_math:.1f}
 python: {average_python:.1f}
 english: {average_english:.1f}
 Найкращий студент: {best_students} ({best_average:.1f})"""
 with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
     f.write(results_text)
-print(f"Результат аналізу: {results_text}")
+
+print(f"Результат аналізу:\n{results_text}")
 
 
 # ============================================================
